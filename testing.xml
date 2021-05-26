@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTesting" parallel="false">
+<test name="onChrome">
+    <classes>
+        <class name="bookspractice.AuthenticationTests"></class>
+        <class name="bookspractice.GetSpecificBook">
+            <methods>
+                <include name="createNewBook"></include>
+                <include name="updateBook"></include>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
